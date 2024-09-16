@@ -6,7 +6,7 @@ import Feather from '@expo/vector-icons/Feather';
 import Card from "../../components/Card";
 export default function Home() {
 
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState<string[]>([])
     const [productName, setProductName] = useState('')
     function addProduct(newProduct: string){
         setProducts([...products,newProduct]);
